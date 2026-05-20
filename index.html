@@ -9,7 +9,7 @@
     <meta property="og:url" content="https://bbbpalm.netlify.app">
 
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>팜스쿨 12기 과제&amp;출결표</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
   <style>
@@ -33,51 +33,21 @@
  
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600&display=swap');
  
-    body {
-      background: var(--bg-main);
-      font-family: var(--font-sans);
-    }
+    body { background: var(--bg-main); font-family: var(--font-sans); }
  
-    .app-wrap {
-      padding: 1.25rem 1rem 2.5rem;
-      max-width: 380px;
-      margin: 0 auto;
-    }
+    .app-wrap { padding: 1.25rem 1rem 2.5rem; max-width: 380px; margin: 0 auto; }
  
-    .header {
-      text-align: center;
-      padding: 1.75rem 1rem 1.25rem;
-      border-bottom: 0.5px solid var(--border);
-      margin-bottom: 1.25rem;
-    }
-    .header-sub {
-      font-size: 11px;
-      letter-spacing: 0.18em;
-      color: var(--text-tertiary);
-      text-transform: uppercase;
-      margin-bottom: 0.5rem;
-    }
-    .header-title {
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--text-primary);
-      line-height: 1.4;
-      letter-spacing: -0.01em;
-    }
+    .header { text-align: center; padding: 1.75rem 1rem 1.25rem; border-bottom: 0.5px solid var(--border); margin-bottom: 1.25rem; }
+    .header-sub { font-size: 11px; letter-spacing: 0.18em; color: var(--text-tertiary); text-transform: uppercase; margin-bottom: 0.5rem; }
+    .header-title { font-size: 18px; font-weight: 600; color: var(--text-primary); line-height: 1.4; letter-spacing: -0.01em; }
  
     .meta-row { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; margin-bottom: 1rem; }
     .meta-field { display: flex; flex-direction: column; gap: 5px; }
     .meta-label { font-size: 11px; letter-spacing: 0.09em; color: var(--text-tertiary); text-transform: uppercase; }
     .meta-field input {
-      background: var(--white-card);
-      border: 0.5px solid var(--border);
-      border-radius: 8px;
-      padding: 9px 12px;
-      font-size: 13px;
-      font-family: var(--font-sans);
-      color: var(--text-primary);
-      width: 100%;
-      outline: none;
+      background: var(--white-card); border: 0.5px solid var(--border); border-radius: 8px;
+      padding: 9px 12px; font-size: 13px; font-family: var(--font-sans);
+      color: var(--text-primary); width: 100%; outline: none;
     }
     .meta-field input:focus { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(124,92,62,0.1); }
     .meta-field input::placeholder { color: var(--text-tertiary); font-size: 12px; }
@@ -89,14 +59,9 @@
     table { width: 100%; border-collapse: collapse; table-layout: fixed; }
  
     thead th {
-      background: var(--bg-table-head);
-      padding: 10px 0;
-      font-size: 11px;
-      font-weight: 600;
-      color: var(--text-secondary);
-      text-align: center;
-      border-bottom: 0.5px solid var(--border);
-      letter-spacing: 0.03em;
+      background: var(--bg-table-head); padding: 10px 0;
+      font-size: 11px; font-weight: 600; color: var(--text-secondary);
+      text-align: center; border-bottom: 0.5px solid var(--border); letter-spacing: 0.03em;
     }
     thead th:first-child { text-align: left; padding-left: 14px; }
     thead th:last-child { padding-right: 14px; }
@@ -111,15 +76,13 @@
  
     .name-input {
       background: transparent; border: none; font-size: 13px;
-      font-family: var(--font-sans); color: var(--text-primary);
-      width: 100%; outline: none; padding: 0;
+      font-family: var(--font-sans); color: var(--text-primary); width: 100%; outline: none; padding: 0;
     }
     .name-input::placeholder { color: var(--text-tertiary); font-size: 12px; }
  
     .check-wrap { display: flex; align-items: center; justify-content: center; }
     .check-box {
-      width: 22px; height: 22px;
-      border: 0.5px solid var(--border); border-radius: 6px;
+      width: 22px; height: 22px; border: 0.5px solid var(--border); border-radius: 6px;
       cursor: pointer; display: flex; align-items: center; justify-content: center;
       background: var(--white-card); transition: background 0.15s, border-color 0.15s; flex-shrink: 0;
     }
@@ -133,10 +96,9 @@
     .summary-card .s-num { font-size: 20px; font-weight: 600; color: var(--text-primary); }
  
     .save-btn {
-      margin-top: 1.25rem; width: 100%; padding: 13px;
-      background: var(--accent); border: none; border-radius: 10px;
-      font-size: 14px; font-weight: 600; font-family: var(--font-sans);
-      color: #F9F5EE; cursor: pointer; transition: background 0.15s;
+      margin-top: 1.25rem; width: 100%; padding: 13px; background: var(--accent);
+      border: none; border-radius: 10px; font-size: 14px; font-weight: 600;
+      font-family: var(--font-sans); color: #F9F5EE; cursor: pointer; transition: background 0.15s;
       display: flex; align-items: center; justify-content: center; gap: 6px; letter-spacing: 0.02em;
     }
     .save-btn:hover { background: var(--accent-hover); }
@@ -163,8 +125,15 @@
     .saved-stat-label { font-size: 11px; color: var(--text-tertiary); margin-bottom: 4px; }
     .saved-stat-num { font-size: 18px; font-weight: 600; color: var(--text-primary); }
  
-    .edit-btn { width: 100%; padding: 11px; background: transparent; border: 0.5px solid var(--border); border-radius: 10px; font-size: 13px; font-family: var(--font-sans); color: var(--text-secondary); cursor: pointer; }
-    .edit-btn:hover { background: var(--bg-card); }
+    .sheets-btn {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      width: 100%; padding: 13px; background: var(--accent);
+      border: none; border-radius: 10px; font-size: 14px; font-weight: 600;
+      font-family: var(--font-sans); color: #F9F5EE; cursor: pointer;
+      transition: background 0.15s; text-decoration: none; letter-spacing: 0.02em;
+      margin-bottom: 10px;
+    }
+    .sheets-btn:hover { background: var(--accent-hover); }
   </style>
 </head>
 <body>
@@ -178,11 +147,11 @@
     <div class="meta-row">
       <div class="meta-field">
         <div class="meta-label">주차</div>
-        <input type="text" id="week-input" placeholder="예) 3주차" oninput="updateSummary()" />
+        <input 입력="text" id="week-input" placeholder="예) 3주차" oninput="updateSummary()" />
       </div>
       <div class="meta-field">
         <div class="meta-label">조 이름</div>
-        <input type="text" id="group-input" placeholder="예) 5조" oninput="updateSummary()" />
+        <input 입력="text" id="group-input" placeholder="예) 5조" oninput="updateSummary()" />
       </div>
     </div>
  
@@ -243,19 +212,22 @@
         <div class="saved-stat"><div class="saved-stat-label">전도</div><div class="saved-stat-num" id="sv-evan">—</div></div>
       </div>
     </div>
-    <button class="edit-btn" onclick="goBack()">
-      <i class="ti ti-arrow-left" aria-hidden="true" style="font-size:13px;vertical-align:-1px;margin-right:4px"></i>돌아가서 수정하기
-    </button>
+ 
+    <a id="sheets-link" class="sheets-btn" href="#" target="_blank">
+      <i class="ti ti-table" aria-hidden="true" style="font-size:15px"></i>스프레드시트에서 확인하기
+    </a>
+ 
     <div class="footer">Palm School · 12기</div>
   </div>
 </div>
  
 <script>
   const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbznhj2zPMHja_ucDXngBKU3oEY8WBn-T2T_H9CdWmhaiVFWLHCe-Ej-z7s8dkLaHYoG/exec';
+  const SHEET_URL   = 'https://docs.google.com/spreadsheets/d/12QQ-7SiHUkr5p_zYz5E3ouKS5Ek6brani0-EOcA2v1k/edit?gid=0#gid=0';
   let rowId = 0;
  
-  function makeCheckBox(type, id) {
-    return `<div class="check-wrap"><div class="check-box" id="cb-${type}-${id}" onclick="toggleCheck('${type}',${id})"><i class="ti ti-check" aria-hidden="true"></i></div></div>`;
+  function makeCheckBox(입력, id) {
+    return `<div class="check-wrap"><div class="check-box" id="cb-${입력}-${id}" onclick="toggleCheck('${입력}',${id})"><i class="ti ti-check" aria-hidden="true"></i></div></div>`;
   }
  
   function addRow() {
@@ -274,8 +246,8 @@
     updateSummary();
   }
  
-  function toggleCheck(type, id) {
-    document.getElementById(`cb-${type}-${id}`).classList.toggle('active');
+  function toggleCheck(입력, id) {
+    document.getElementById(`cb-${입력}-${id}`).classList.toggle('active');
     updateSummary();
   }
  
@@ -302,14 +274,14 @@
  
   function updateSummary() {
     const { total, att, late, word, evan } = getStats();
-    document.getElementById('sum-att').textContent = att + ' / ' + total;
+    document.getElementById('sum-att').textContent  = att  + ' / ' + total;
     document.getElementById('sum-late').textContent = late + ' / ' + total;
     document.getElementById('sum-word').textContent = word + ' / ' + total;
     document.getElementById('sum-evan').textContent = evan + ' / ' + total;
   }
  
   async function saveData() {
-    const week = document.getElementById('week-input').value.trim() || '미입력';
+    const week  = document.getElementById('week-input').value.trim()  || '미입력';
     const group = document.getElementById('group-input').value.trim() || '미입력';
     const { total, att, late, word, evan } = getStats();
     const btn = document.getElementById('save-btn');
@@ -344,21 +316,17 @@
     btn.innerHTML = '<i class="ti ti-device-floppy" style="font-size:15px"></i>저장하기';
  
     document.getElementById('saved-meta-title').textContent = group;
-    document.getElementById('saved-meta-sub').textContent = week + ' · 총 ' + total + '명';
-    document.getElementById('saved-sub').textContent = week + ' · ' + group + ' 출결이 저장되었습니다.';
-    document.getElementById('sv-att').textContent = att + ' / ' + total;
+    document.getElementById('saved-meta-sub').textContent   = week + ' · 총 ' + total + '명';
+    document.getElementById('saved-sub').textContent        = week + ' · ' + group + ' 출결이 저장되었습니다.';
+    document.getElementById('sv-att').textContent  = att  + ' / ' + total;
     document.getElementById('sv-late').textContent = late + ' / ' + total;
     document.getElementById('sv-word').textContent = word + ' / ' + total;
     document.getElementById('sv-evan').textContent = evan + ' / ' + total;
     document.getElementById('sheets-badge').style.display = sheetSent ? 'inline-flex' : 'none';
+    document.getElementById('sheets-link').href = SHEET_URL;
  
-    document.getElementById('edit-view').style.display = 'none';
+    document.getElementById('edit-view').style.display  = 'none';
     document.getElementById('saved-view').style.display = 'block';
-  }
- 
-  function goBack() {
-    document.getElementById('saved-view').style.display = 'none';
-    document.getElementById('edit-view').style.display = 'block';
   }
  
   ['','','','',''].forEach(() => addRow());
